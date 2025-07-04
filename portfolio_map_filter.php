@@ -211,7 +211,7 @@ function handle_ajax_filter_jobs() {
 
 
 function enqueue_google_maps_scripts() {
-    wp_enqueue_script('google-maps-api', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBa3CJIUrHfpqWUk2uaDAPz7J3pA0K-pGA&callback=initMap', [], null, true);
+    wp_enqueue_script('google-maps-api', 'https://maps.googleapis.com/maps/api/js?key=Add API KEY &callback=initMap', [], null, true);
     wp_enqueue_script('markerclusterer', 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js', [], null, true);
     wp_enqueue_script('map-search', get_stylesheet_directory_uri() . '/assets/js/map-search-ajax.js', array('jquery'), null, true);
     wp_localize_script('map-search', 'ajax_params', array(
